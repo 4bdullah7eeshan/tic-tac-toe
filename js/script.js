@@ -94,9 +94,9 @@ const TicTacToe = (function(doc) {
                     dialogHeading.textContent = "Player 1 (X) Won!"
                     dialog.showModal();
                 }, 100);                
-        } else if (c[0].textContent === c[1].textContent === c[2].textContent === "O" || c[3].textContent === c[4].textContent === c[5].textContent === "O" || c[6].textContent === c[7].textContent === c[8].textContent === "O" ||
-            c[0].textContent === c[3].textContent === c[6].textContent === "O" || c[1].textContent === c[4].textContent === c[7].textContent === "O" || c[2].textContent === c[5].textContent === c[8].textContent === "O" ||
-            c[0].textContent === c[4].textContent === c[8].textContent === "O" || c[2].textContent === c[4].textContent === c[6].textContent === "O") {
+        } else if ((c[0].textContent === "O" && c[1].textContent === "O" && c[2].textContent === "O") || (c[3].textContent === "O" && c[4].textContent === "O" && c[5].textContent === "O") || (c[6].textContent === "O" && c[7].textContent === "O" && c[8].textContent === "O") ||
+            (c[0].textContent === "O" && c[3].textContent === "O" && c[6].textContent === "O") || (c[1].textContent === "O" && c[4].textContent === "O" && c[7].textContent === "O") || (c[2].textContent === "O" && c[5].textContent === "O" && c[8].textContent === "O") ||
+            (c[0].textContent === "O" && c[4].textContent === "O" && c[8].textContent === "O") || (c[2].textContent === "O" && c[4].textContent === "O" && c[6].textContent === "O")) {
                 setTimeout(() => {
                     dialogHeading.textContent = "Player 2 (O) Won!"
                     dialog.showModal();
